@@ -29,17 +29,17 @@
 (load-my 'highlight-parentheses)
 (load-my 'highlight-symbol)
 (load-my 'magit)
-(load-my 'org)
+;;(load-my 'org)
 ;;(load-my 'ruby)
 ;;(load-my 'highline)
 
 ;; ido
 (load-my 'ido)
-(load-my 'ido-goto-symbol)
+;;(load-my 'ido-goto-symbol)
 
 ;; lisp
 (load-my 'paredit)
-(load-my 'elisp)
+;;(load-my 'elisp)
 ;;(load-my 'scheme)
 ;;(load-my 'chicken)
 (load-my 'clojure)

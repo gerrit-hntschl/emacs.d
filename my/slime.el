@@ -12,3 +12,26 @@
      ;; Avoids that some unicode characters blow up the Slime connection
      ;; to the swank server
      (setq slime-net-coding-system 'utf-8-unix)))
+
+(when (require 'slime nil 'noerror)
+  (defun make-slime-connector (port)
+    (lexical-let ((port port))
+      (lambda ()
+        (interactive)
+        (let ((conn (find port
+                          slime-net-processes
+                          :test (lambda (port conn)
+                                  (= port (slime-connection-port conn))))))
+          (if conn
+              (progn
+                (slime-select-connection conn)
+                (slime-repl)
+                (message "Lisp: %s %s"
+                         (slime-connection-name conn)
+                         (process-contact conn)))
+            (slime-connect "localhost" port))))))
+
+  (dolist (num (number-sequence 1 5))
+    (define-key (current-global-map)
+      (read-kbd-macro (concat "C-c " (number-to-string num)))
+      (make-slime-connector (+ 4004 num)))))
