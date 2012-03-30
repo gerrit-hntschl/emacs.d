@@ -19,14 +19,14 @@
 (load-my 'auto-save)
 (load-my 'keys)
 (load-my 'scpaste)
-(load-my 'hippie-expand)
+;;(load-my 'hippie-expand)
 (load-my 'browse-url)
 (load-my 'smooth-scrolling)
 (load-my 'anything)
 (load-my 'printing)
 
 ;; modes
-(load-my 'highlight-parentheses)
+;;(load-my 'highlight-parentheses)
 (load-my 'highlight-symbol)
 (load-my 'magit)
 ;;(load-my 'org)
@@ -35,7 +35,11 @@
 
 ;; ido
 (load-my 'ido)
-;;(load-my 'ido-goto-symbol)
+(load-my 'ido-goto-symbol)
+
+;; autocomplete
+(load-my 'auto-complete)
+(load-my 'ac-slime)
 
 ;; lisp
 (load-my 'paredit)
