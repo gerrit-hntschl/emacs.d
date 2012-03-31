@@ -32,7 +32,9 @@
          ("M-[" . select-previous-window)
          ("M-]" . select-next-window)
          ("C-x C-b" . ido-switch-buffer)
-         ("C-S-<down>" . duplicate-line))))
+         ("C-S-<down>" . duplicate-line)
+         ("C-z" . undo)
+)))
 
   (dolist (key keys)
     (define-key (current-global-map)
