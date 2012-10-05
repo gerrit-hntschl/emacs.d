@@ -15,8 +15,8 @@
         dashes))))
 
 (defun insert-ns-decl ()
-  "Creates the namespace based on the given file-name.
-   Assumes that the file path contains a src folder."
+  "Creates the namespace based on the file-name of the current buffer.
+   Assumes that the file path contains a src or test folder."
   (interactive)
   (if (= 0 (buffer-size))
       (let ((namespace (file-name->ns (buffer-file-name))))
