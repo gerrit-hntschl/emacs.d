@@ -5,7 +5,7 @@
 (eval-after-load "auto-complete"
  '(add-to-list 'ac-modes 'slime-repl-mode))
 
- (require 'pos-tip)
+(require 'pos-tip)
 (setq pos-tip-foreground-color "white")
 (setq pos-tip-background-color "black")
 

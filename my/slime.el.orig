@@ -13,6 +13,7 @@
      ;; to the swank server
      (setq slime-net-coding-system 'utf-8-unix)))
 
+<<<<<<< HEAD
 (when (require 'slime nil 'noerror)
   (defun make-slime-connector (port)
     (lexical-let ((port port))
@@ -35,9 +36,18 @@
     (define-key (current-global-map)
       (read-kbd-macro (concat "C-c " (number-to-string num)))
       (make-slime-connector (+ 4004 num)))))
+=======
+(defun slime-connecting (port)
+  (lexical-let ((port port))
+      (lambda ()
+        (interactive)
+        (slime-connect "localhost" port))))
 
-(add-hook 'slime-repl-mode-hook
-               (lambda ()
-                 (clojure-mode-font-lock-setup)
-                 (font-lock-mode)
-                 (font-lock-mode)))
+(define-key (current-global-map)
+  (kbd "C-c 1")
+  (slime-connecting 4005))
+
+(define-key (current-global-map)
+  (kbd "C-c 2")
+  (slime-connecting 4006))
+>>>>>>> c5d9427a7cb18afe2370f078405872303314592e
