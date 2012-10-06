@@ -24,6 +24,7 @@
 (load-my 'smooth-scrolling)
 (load-my 'anything)
 (load-my 'printing)
+(load-my 'grep-o-matic)
 
 ;; modes
 ;;(load-my 'highlight-parentheses)

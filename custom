@@ -5,6 +5,9 @@
  ;; If there is more than one, they won't work right.
  '(auth-source-save-behavior nil)
  '(custom-safe-themes (quote ("649ccffdb140fcd021013f6297dedeb313b74fa5" default)))
+ '(grep-o-matic-ask-about-save nil)
+ '(grep-o-matic-search-patterns (quote ("*.el" "*.clj" "*.md" "*.html")))
+ '(repository-root-matchers (quote (repository-root-matcher/doo)))
  '(send-mail-function (quote smtpmail-send-it)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
