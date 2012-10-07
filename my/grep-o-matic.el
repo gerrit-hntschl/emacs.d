@@ -9,3 +9,7 @@
 (repository-root-add-builtin-matcher 'repository-root-matcher/doo)
 
 (global-set-key (kbd "M-/")   'grep-o-matic-repository)
+
+(global-set-key (kbd "C-`") 'next-error)
+(global-set-key (kbd "C-/") 'previous-error)
+

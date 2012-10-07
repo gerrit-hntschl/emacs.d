@@ -51,3 +51,7 @@
   "Prevent y-or-n-p from activating a dialog"
   (let ((use-dialog-box nil))
     ad-do-it))
+
+;; try to set split-threshold to limit number of open windows caused by selecting grep results
+;; (setq split-height-threshold 80)
+;; (setq split-width-threshold 160)
