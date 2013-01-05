@@ -48,5 +48,6 @@
 ;;(load-my 'scheme)
 ;;(load-my 'chicken)
 (load-my 'clojure)
+(load-my 'clojurescript)
 (load-my 'slime)
 (load-my 'ide)

@@ -53,5 +53,8 @@
     ad-do-it))
 
 ;; try to set split-threshold to limit number of open windows caused by selecting grep results
-;; (setq split-height-threshold 80)
-;; (setq split-width-threshold 160)
+;; default: (setq split-height-threshold 80)
+;; default: (setq split-width-threshold 160)
+(setq split-width-threshold 800)
+
+
