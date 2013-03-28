@@ -24,8 +24,8 @@
 
 
 ;; slime
-(eval-after-load 'slime
-  '(progn (slime-setup '(slime-repl))))
+;;(eval-after-load 'slime
+;;  '(progn (slime-setup '(slime-repl))))
 
 (require 'clojure-mode)
 (defun define-function ()

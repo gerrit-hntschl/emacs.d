@@ -38,9 +38,11 @@
 (load-my 'ido)
 (load-my 'ido-goto-symbol)
 
+;;(load-my 'nrepl)
+
 ;; autocomplete
 (load-my 'auto-complete)
-(load-my 'ac-slime)
+;; (load-my 'ac-slime)
 
 ;; lisp
 (load-my 'paredit)
@@ -49,5 +51,5 @@
 ;;(load-my 'chicken)
 (load-my 'clojure)
 (load-my 'clojurescript)
-(load-my 'slime)
+;;(load-my 'slime)
 (load-my 'ide)
